@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet"  href="/styles.css">
+    <title>Carbon form|<% title %> </title>
+</head>
+<body>
+    <nav>
+        <div class="nav_content">
+            <div class="title">
+                <a href="/"><h1>Carbon footprint project</h1></a>
+                <p><i>Know your contribution to carbon carbon footprint</i></p>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/form">form</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form action="/form" method="POST" >
+        <div class="mb-3 student_info">
+            <label class="form-label" for="fullName">full name</label>
+            <input class="form-control" type="text" name="fullNmae" id="fullName" required>
+        </div>
+        <div class="mb-3 student_info">
+            <label class="form-label" for="school">school</label>
+            <input class="form-control" type="text" name="school" id="school" required>
+        </div>
+        <div class="mb-3 student_info">
+            <label class="form-label" for="department">department</label>
+            <input class="form-control" type="text" name="department" id="department" required>
+        </div>
+        <div class="mb-3 student_info">
+            <label for="level">level</label>
+            <select name="level" id="level" class="form-select" aria-label="Default select example" required>
+                <option value=100 selected>100</option>
+                <option value=200>200</option>
+                <option value=300>300</option>
+                <option value=400>300</option>
+                <option value=500>500</option>
+            </select>
+        </div>
+        <div class="mb-3 student_info">
+            <label class="form-label" for="address">address</label>
+            <input class="form-control" type="text" placeholder="eziobodo" name="address" id="address" required>
+        </div>
+
+        <h3>Questions</h3>
+        <ol>
+            <li>
+                <p>What is your means of transporting to lectures?</p>
+                <select name="transport" id="transport" class="form-select" aria-label="Default select example" required>
+                    <option value=trekking selected>trekking</option>
+                    <option value=trekking>bysicle</option>
+                    <option value=trekking>motor-cycle</option>
+                    <option value=400>shuttle</option>
+                </select>
+                
+            </li>
+
+            <li>
+                <p>How do you best describe your diet?</p>
+                <select name="diet" id="diet" class="form-select" aria-label="Default select example" required>
+                    <option value=Vegeterian selected>Vegeterian</option>
+                    <option value=Omnivore >Omnivore</option>
+                    <option value=Extreme-meat-eater >Extreme meat eater</option>
+                </select>
+            </li>
+
+            <li>
+                <p>What is your daily meal plan?</p>
+                <select name="mealPlan" id="mealPlan" class="form-select" aria-label="Default select example" required>
+                    <option value=once-daily selected>Once daily</option>
+                    <option value=twice-daily >Twice Daily</option>
+                    <option value=Thrice-daily >Thrice daily</option>
+                    <option value=Four-times-daily >Four times daily</option>
+                </select>
+            </li>
+
+            <li>
+                <p>How many times do you take soft drinks in a week?</p>
+                <div class="mb-3">
+                    <input class="form-control"  type="number" name="drinks" id="drinks" required>
+                </div>
+            </li>
+
+            <li>
+                <p>How many bottles of alcoholic drinks do you take in a week?</p>
+                <div class="mb-3">
+                    <input class="form-control" type="number" name="alcohol" id="alcohol" required>
+                </div>
+            </li>
+            <li>
+                <p>How many exercise books do you make use of per semester?</p>
+                <div class="mb-3">
+                    <input class="form-control"  type="number" name="bookNumber" id="bookNumber" required>
+                </div>
+                <select name="bookType" id="bookType" class="form-select" aria-label="Default select example" required>
+                    <option value=soft-copy selected>soft copy</option>
+                    <option value=hard-copy>hard copy</option>
+                </select>
+            </li>
+            <li>
+                <p>How many textbooks  do you use per semester?</p>
+                <div class="mb-3">
+                    <input class="form-control"  type="number" name="textbooks" id="textbooks" required>
+                </div>
+            </li>
+
+            <li>
+                <p>An average of how many clothes do you buy/sew per semester? </p>
+                <div class="mb-3">
+                    <input class="form-control"  type="number" name="clothes" id="clothes" required>
+                </div>
+            </li>
+            <h3>OPTIONAL</h3>
+            <li>
+                <p>What is the model / power rating of your hostel generator? </p>
+                <div class="mb-3">
+                    <input class="form-control"  type="number" name="power" id="power" required>
+                </div>
+            </li>
+            <li>
+                <p>How many liters of diesel / petrol does it use daily? </p>
+                <div class="mb-3">
+                    <input class="form-control"  type="number" name="fuel" id="fuel" required>
+                </div>
+            </li>
+            <li>
+                <p>What is the run time of the generator? </p>
+                <div class="mb-3">
+                    <input class="form-control"  type="number" name="genRunTime" id="genRunTime" required>
+                </div>
+            </li>
+        </ol>
+        <button> submit</button>
+    </form>
+</body>
+</html>

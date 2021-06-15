@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://wallpaperaccess.com/full/2683171.jpg");
+}
+nav{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.342);
+    color: white;
+}
+.nav_content{
+    max-width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_content>ul{
+    display: flex;
+    list-style: none;
+}
+.nav_content>ul>li>a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    color: white;
+    font-size: large;
+    margin-right: 2rem;
+}
+.nav_content>ul>li>a:hover{
+    color: rgb(0, 89, 255);
+}
+form{
+    max-width: 60%;
+    margin: 2rem auto;
+    backdrop-filter: blur(3rem);
+    padding: 2rem;
+}
+.student_info{
+    display: flex !important;
+}
+.student_info>label{
+    min-width: 15%;
+    color: rgb(0, 89, 255);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.student_info>input{
+    background: transparent;
+    padding: 0 1rem;
+    border: 2px solid white !important;
+}
+h3{
+    color: gray;
+}
+ol{
+    width: 100%;
+}
+ol>li{
+    color: white;
+}
+.err{
+    width: 80%;
+    margin: 4rem auto;
+    color: white;
+}
+.err>h1{
+    font-size: 6rem;
+}
+.err>h3{
+    color: white;
+}
+button{
+    padding: 1rem 3rem;
+    background: rgba(0, 89, 255, 0.356);
+    color: white;
+    font-size: 2em;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+}
+button>a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+.home{
+    max-width: 80%;
+    margin: 2rem auto;
+    backdrop-filter: blur(3rem);
+    padding: 5rem;
+}
+.home>button{
+    justify-content: start;
+}
+.home>.discription{
+    color: white;
+    padding-bottom: 4rem;
+}
+.success{
+    text-align: center;
+    color: white;
+    margin-top: 7rem;
+    backdrop-filter: blur(5rem);
+    border-radius: 0.5rem;
+    padding: 3rem;
+}
+.success>h1{
+    text-transform: capitalize;
+    font-weight: 900;
+    padding: 3rem 0;
+}
+@media screen and (max-width: 1000px) {
+    form{
+        max-width: 95%;
+    }
+    .student_info{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
